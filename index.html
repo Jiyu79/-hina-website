@@ -1,1 +1,65 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hina's website</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background: linear-gradient(135deg, #4b9be1, #f3677b);
+        color: white;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+      }
+      button {
+        font-family: monospace;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 0.5rem;
+      }
+      .welcome-btn {
+        background: blue;
+        color: white;
+      }
+      .name-btn {
+        background: orange;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hina's website</h1>
+    <h2>click the buttons below</h2>
+    <button class="welcome-btn" onclick="alert('Hello there')">
+      Welcome
+    </button>
+    <button
+      class="name-btn"
+      onclick="
+        const name = prompt(`What's your name?`);
+        if (name) {
+          alert('Nice to meet you, ' + name + '!');
+        } else {
+          alert('Nice to meet you, stranger');
+        }
+      "
+    >
+      What's your name?
+    </button>
+  </body>
+</html>
